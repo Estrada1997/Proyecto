@@ -65,24 +65,7 @@ class Pago_Salario:
     #     h_ord = int(input("Ingrese la catidad de horas orrdinarias: "))
     #     ext_diur = int(input("Horas extras: "))
     #     ext_noct = int(input("Horas nocturnas: "))
-    #     ext_dom = int(input("Horas Dominicanas: "))
-sueldo = Sueldo del empleado
-valor_hora = sueldo/240
-Sobretiempo = valor_hora * (horasRecargo*0.50+horasExtraordinarias*2)
-comisionEmpOficina =  Deducciones.comision*sueldo
-antiguedadEmpObrero = Deducciones.antiguedad*(FechaNomina - FechaIngreso)/365*sueldo
-iessEmpleado = Deducciones.iess*(sueldo+sobretiempo)
-prestamoEmpleado = cuota del prestamo
-toting = sueldo+sobretiempo+ comisionEmpOficina+ antiguedadEmpObrero
-totdes = iessEmpleado + prestamoEmpleado
-liquidoRecibir = toting - totdes
-
-
-
-
-
-
-
+        ext_dom = int(input("Horas Dominicanas: "))de
 
     def calcular(self):
         salario_ord = 8 * 390.00
@@ -94,7 +77,6 @@ liquidoRecibir = toting - totdes
 pago = Pago_Salario()
 pago.calcular()
 print(Pago_Salario())
-
 
 class Prestamo(Trabajador):
     def __init__(self, nom ="Anderson Estrada" , ced ="0921171617", sueldo ="390", comision ="si", fecha="3/08/2021", monto ="1000", meses="5", interes="0.10"):
@@ -111,10 +93,7 @@ class Prestamo(Trabajador):
         print("El valor del Prestamo es $:{:20} Interes: {} Pago Total: {}".format(self.monto, intereses, total_pago))
 # pres = Prestamo()
 # pres.calculo()
-# print(Prestamo())
-
-        
-             
+# print(Prestamo())         
         
 # hora = datetime.datetime.now()
 # print(hora)
@@ -132,17 +111,3 @@ class Prestamo(Trabajador):
 # pres = Prestamo()
 # pres.calculo()
 # print(Prestamo())
-
-#print("Su sueldo es {}".format(pagar))
-        #print("La retencio Para el seguro (IESS) es: ",retencion)
-             #Pedri datos por teclado#
-
-# Nuevo = input("Desea ingresar a un Trabajador: ")
-# if nuevo == "si":
-   # nom = input("Ingrese el Nombre del Empleado o Trabajador: ")
-   # ced = int(input("Ingrese su numero de cedula: "))
-    # telf = int(input("Ingrese su numero telefonico: "))
-    # sueldo = int(input("Ingrese su sueldo actual: "))
-    # Fe_Ingreso = int(input("Ingrese su fehca de Ingreso a la Empresa: "))           para pedir por teclado
-    # sueldo = float(input("Ingrese el salario basico a pagar: "))
-    # comision = input("Tiene comision (si) 0 (no): ")
